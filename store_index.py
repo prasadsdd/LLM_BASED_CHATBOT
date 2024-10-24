@@ -19,12 +19,12 @@ embeddings = download_embeddings()
 
 pc = Pinecone(api_key=PINECONE_API_KEY)
 
-index_name = "medicalbot"
+index_name = "dschatbot"
 
 
 pc.create_index(
     name=index_name,
-    dimension=384, 
+    dimension=1536, 
     metric="cosine", 
     spec=ServerlessSpec(
         cloud="aws", 

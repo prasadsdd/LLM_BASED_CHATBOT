@@ -27,5 +27,5 @@ def text_split(extracted_data):
 
 #Download the Embeddings from HuggingFace 
 def download_embeddings():
-    embeddings=BedrockEmbeddings(model_id="amazon.titan-embed-text-v1", client=bedrock)  #this model return 384 dimensions
+    embeddings=BedrockEmbeddings(model_id="amazon.titan-embed-text-v1", client=bedrock)  #this model return 1536 dimensions
     return embeddings
